@@ -1,0 +1,123 @@
+#wrapperx {
+	z-index: -2;
+	width: 1100px;
+	min-height: 750px;
+	height: auto;
+	margin-left: auto; margin-right: auto;
+
+}
+
+
+/* Home PAGE
+*****************************************************************/
+#skateboard,#balon-twet,#bantal,#popmie,#tv,#fb,#puasin,#sinar,#get-lucky,#red-shadow{width: auto; height: auto;
+-webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+
+
+
+}
+
+
+
+#skateboard{position: absolute; margin-left: 690px;}
+#balon-twet{position: absolute;margin-top: 219px; margin-left: 30px;}
+#bantal{ position: absolute;  margin-top: 375px; margin-left: -25px;}
+#popmie{ position: absolute; margin-left: 215px; margin-top: 200px; z-index: 1;}
+#tv{position: absolute; margin-top: 353px; margin-left:585px; z-index: -1;}
+#fb{position: absolute; margin-top: 617px; margin-left: 550px;}
+#puasin{position: absolute; margin-top: -50px; margin-left: 830px;}
+#sinar{ position: absolute;margin-top: 580px; z-index: -1;}
+#get-lucky{ position: absolute;margin-top: 610px; margin-left: 25px; z-index: 1;}
+#red-shadow{position: absolute; z-index: -2; margin-top: 575px;}
+
+
+/*
+==============================================
+asep
+==============================================
+*/
+#popmie .smoke {
+  position: absolute;
+  width: 267px;
+  height: 400px;
+  background:url('../../img/asep.png') no-repeat;
+  bottom: 300px; 
+  margin-left:-100px;
+
+  position : absolute\9; /* IE8 and below - just in case */
+  *position: absolute; /* IE7 and below */
+  _position: absolute; /* IE6 and below */
+}
+
+/*
+==============================================
+pulse
+==============================================
+*/
+
+.pulsexx{
+	animation-name: pulsex;
+	-webkit-animation-name: pulsex;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulsex {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulsex {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

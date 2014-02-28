@@ -1,0 +1,408 @@
+@import url('module/animate.css');
+@import url('module/hover.css');
+@import url('module/reset.css');
+@import url('module/font.css');
+@import url('module/header.css');
+@import url('page/homex.css');
+/* Extended base styles (site specific)
+*****************************************************************/
+html { 
+	
+	}
+body {
+	
+	overflow-y:scroll;
+	overflow-x:hidden;
+	height: 3910px;
+	color: #000;
+	background-color:rgba(237,49,35);
+	font-size: 14px;
+	background-repeat: no-repeat;
+background-attachment: fixed;
+}
+h1 {
+	color: #21a97e;
+}
+a, a:link,
+a:active,
+a:visited {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	color:#ed3423;
+	outline: none;
+	text-decoration:none;
+	}
+	a:hover { 
+		color:#000;
+		}
+img { 
+	display:block;
+	}
+p {
+	margin:1em 0;
+	}
+
+/* Common shared styles
+*****************************************************************/
+
+hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #3b3b3b;
+	border-bottom: 1px solid #3b3b3b;
+	height: 3px;
+}
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {
+	position: relative;
+}
+#home{ width: 100%;height: 100%; position: absolute; margin-top: 3000px;background: #ee2f23; /* Old browsers */ z-index: 2;
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlMmYyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VlMmQyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iI2UxMjYyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMTI2MjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ee2f23 0%, #ee2d23 50%, #e12627 86%, #e12627 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee2f23), color-stop(50%,#ee2d23), color-stop(86%,#e12627), color-stop(100%,#e12627)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2f23', endColorstr='#e12627',GradientType=0 ); /* IE6-8 */
+
+-webkit-animation-name: fadeIn;
+-moz-animation-name: fadeIn;
+-o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+   -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Nav
+*****************************************************************/
+
+nav#primary {
+	z-index: 5;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -40px;
+}
+nav#primary li {
+	position: relative;
+	height: 20px;
+}
+nav#primary a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background: transparent url('../img/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+	background: transparent url('../img/nav-dot.png') 4px -16px no-repeat;
+}
+nav#primary h1 {
+	position: absolute;
+	right: 22px;
+	top: -7px;
+	display: none;
+	padding: 4px 20px 4px 7px;;
+	color: #fff;
+	white-space: nowrap;
+	background: transparent url('../img/nav-arrow.png') 100% 50% no-repeat;
+	}
+nav.next-prev {
+	margin: 80px 0 0 220px;
+	}
+	nav.next-prevx {
+	margin: 120px 0 0 100px;
+	}
+	
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content {
+	z-index: 4;
+	position: relative;
+	max-width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+	}
+	#content article {
+		width: 300px; right: 0;
+		}
+	    
+		#pertama-dengan-rasa-sosis,
+		#sosis-spesial-chunky-bits,
+		#sosis-bakar-pedas-chili-flake {
+			padding-top: 80px; padding-right: 80px;
+			}
+		#makin-hits {
+			position: absolute;
+			top: 0px;
+			}
+		#pertama-dengan-rasa-sosis{
+			position: absolute;
+			top: 792px;
+			}
+		#sosis-spesial-chunky-bits{
+			position: absolute;
+			top: 1584px;
+			}
+			
+		#sosis-bakar-pedas-chili-flake {
+			position: absolute;
+			top: 2300px;
+			}
+		#main{position: absolute; top: 3010px; z-index: -1; left: 37px;}
+	    #shadow{position: absolute; top: 3459px;left: 73px; z-index: -99;}
+	     #mie{position: absolute; top: 3111px;left: 37px; z-index: 1;}
+
+
+/* midground (clouds) */
+#parallax-bg2 {
+	z-index: 2;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1024px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg2-1 {
+		position: absolute;
+		margin-top: 40%;
+		left: 200px;
+		}
+	#bg2-1x {
+		position: absolute;
+		top: 602px;
+		left: 150px;
+		}
+	#bg2-2 {
+		position: absolute;
+		margin-top: 300px;
+		left: 150px;
+		}
+	#bg2-2x {
+		position: absolute;
+		top: 900px;
+		left: 100px;
+		}
+	#bg2-2x-kanan {
+		position: absolute;
+		top: 500px;
+		left: 300px;
+		}
+		#bg2-2x-kiri {
+		position: absolute;
+		top: 500px;
+		left: 100px;
+		}
+	#bg2-3 {
+		position: absolute;
+		top: 900px;
+		left: 100px;
+		}
+	#bg2-3x-kanan {
+		position: absolute;
+		top: 800px;
+		left: 300px;
+		}
+	#bg2-3x-kiri {
+		position: absolute;
+		top: 800px;
+		left: 100px;
+		}
+	#bg2-4 {
+		position: absolute;
+		top: 1350px;
+		left: 90px;
+		}
+		
+	#bg2-4x-kanan {
+		position: absolute;
+		top: 1350px;
+		left: 270px;
+		}
+		#bg2-4x-kiri {
+		position: absolute;
+		top: 1350px;
+		left: 70px;
+		}
+		
+	#bg2-5 {
+		position: absolute;
+		top: 900px;
+		left: 890px;
+		}
+#bg2-asep {
+		position: absolute;
+	
+		left: 200px;  z-index: -3;
+		}
+
+
+
+/* background (clouds) */
+#parallax-bg1 {
+	z-index: 1;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg1-1 {
+		position: absolute;
+		top: 85px;
+		left: -270px;
+		}
+	#bg1-2 {
+		position: absolute;
+		top: 440px;
+		left: 795px;
+		}
+	#bg1-3 {
+		position: absolute;
+		top: 900px;
+		left: -220px;
+		}
+	#bg1-4 {
+		position: absolute;
+		top: 1020px;
+		left: 450px;
+		}
+
+/*=============================logo*/
+	#logo{ width: 508px; height: 476px; float: right; position: relative;margin-top: 46px;}
+	#logo #splash{
+	 z-index: 1;
+	}
+	#logo #pop{ z-index: 2; width: 231px; height: 215px; position: absolute; top: 84px; left: 176px;}
+	#logo #ini{ z-index: 3; width: 111px; height: 32px; position: absolute;top: 191px; left: 86px;}
+	#logo #makin{ z-index: 3; width: 202px; height: 99px; position: absolute;top: 214px; left: 31px;}
+	#logo #hit{ z-index: 3; width: 215px; height: 127px; position: absolute;top: 276px; left: 167px;}
+/*=============================scene mie*/
+#scene{z-index: 2;
+	position: absolute;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1024px;
+	padding-top: 100px;
+	margin-left: -520px; /* move left by half element's width */}
+
+	#box1,#box2,#box3{opacity: 0;}
+	#box1 .one,#box1 .two,#box1 .three{opacity: 0;}
+	#box1{margin-top: 150px; width: 298px; height:274px;}
+	#box1 .one{ position: absolute;}
+	#box1 .two{ position: absolute;  margin-top: 82px; left: 33px;}
+	#box1 .three{ position: absolute;  margin-top: 183px; left: 24px;}
+	#box2{margin-top: 150px; width: 291px; height: 289px;}
+	#box2 .one,#box2 .two,#box2 .three{opacity: 0;}
+	#box2 .one{ position: absolute; left: 103px;}
+	#box2 .two{ position: absolute; margin-top: 77px; left: 0px;}
+	#box2 .three{ position: absolute; margin-top: 193px; left: 33px;}
+	#box3{ margin-top: 150px; width: 330px; height: 266px;}
+	#box3 .one,#box3 .two,#box3 .three{opacity: 0;}
+	#box3 .one{ position: absolute; left: 126px; margin-top: 1px;}
+	#box3 .two{position: absolute; margin-top: 73px;}
+	#box3 .three{position: absolute; margin-top: 167px; margin-left:101px;}
+
+	#scroll-box{width: auto;height:auto;float: left;margin-top: 60%;margin-left: 110px; top: 50%;}
+	#scroll-box2{width: auto;height:auto;float: left;margin-top: 40%; margin-left: 220px;}
+
+	@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+/*=============================smain*//*=============================scene mie*/
+#progress {
+	width:250px;
+	height: 500px;
+	background:#444;
+	left: 120px;
+	z-index:200;
+	top:20%;
+	position: absolute;
+}
+

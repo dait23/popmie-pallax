@@ -1,0 +1,51 @@
+
+@font-face {
+	font-family: 'bebas';
+    src: url('fonts/bebas/BebasNeue.eot');
+    src: url('fonts/bebas/BebasNeue.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/bebas/BebasNeue.woff') format('woff'), 
+		 url('fonts/bebas/BebasNeue.ttf') format('truetype'), 
+		 url('fonts/bebas/BebasNeue.svg#BebasNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;	
+}
+@font-face {
+	font-family: 'dinpro_regular';
+    src: url('fonts/dinpro/DINNextLTPro-Regular.eot');
+    src: url('fonts/dinpro/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/dinpro/DINNextLTPro-Regular.woff') format('woff'), 
+		 url('fonts/dinpro/DINNextLTPro-Regular.ttf') format('truetype'), 
+		 url('fonts/dinpro/DINNextLTPro-Regular.svg#DINNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;	
+}
+@font-face {
+	font-family: 'dinpro_light';
+    src: url('fonts/dinpro/DINNextLTPro-LightCondensed.eot');
+    src: url('fonts/dinpro/DINNextLTPro-LightCondensed.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/dinpro/DINNextLTPro-LightCondensed.woff') format('woff'), 
+		 url('fonts/dinpro/DINNextLTPro-LightCondensed.ttf') format('truetype'), 
+		 url('fonts/dinpro/DINNextLTPro-LightCondensed.svg#DINNextLTPro-LightCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;	
+}
+@font-face {
+	font-family: 'dinpro_bold_c';
+    src: url('fonts/dinpro/DINNextLTPro-BoldCondensed.eot');
+    src: url('fonts/dinpro/DINNextLTPro-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/dinpro/DINNextLTPro-BoldCondensed.woff') format('woff'), 
+		 url('fonts/dinpro/DINNextLTPro-BoldCondensed.ttf') format('truetype'), 
+		 url('fonts/dinpro/DINNextLTPro-BoldCondensed.svg#DINNextLTPro-BoldCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;	
+}
+@font-face {
+	font-family: 'dinpro_bold';
+    src: url('fonts/dinpro/DINNextLTPro-Bold.eot');
+    src: url('fonts/dinpro/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/dinpro/DINNextLTPro-Bold.woff') format('woff'), 
+		 url('fonts/dinpro/DINNextLTPro-Bold.ttf') format('truetype'), 
+		 url('fonts/dinpro/DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;	
+}

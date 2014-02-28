@@ -1,0 +1,71 @@
+@import url('module/hover.css');
+@import url('module/reset.css');
+@import url('module/font.css');
+@import url('module/header.css');
+@import url('module/colorbox.css');
+/* page*/
+@import url('page/home.css');
+@import url('page/gallery.css');
+
+/* Extended base styles (site specific)
+*****************************************************************/
+html { 
+	  height: 100%;
+	}
+body {
+width: 100%;
+height: 100%;	
+font-family: 'DINNextLTProBoldCondensed';
+background: #ee2f23; /* Old browsers */
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: #fff;
+}
+
+.home{
+
+width: 100%;
+height: 100%;	
+font-family: 'DINNextLTProBoldCondensed';
+background-repeat: no-repeat;
+background-attachment: fixed;
+background: #ee2f23; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlMmYyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VlMmQyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iI2UxMjYyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMTI2MjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ee2f23 0%, #ee2d23 50%, #e12627 86%, #e12627 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee2f23), color-stop(50%,#ee2d23), color-stop(86%,#e12627), color-stop(100%,#e12627)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ee2f23 0%,#ee2d23 50%,#e12627 86%,#e12627 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2f23', endColorstr='#e12627',GradientType=0 ); /* IE6-8 */
+
+}
+.gallery{
+
+width: 100%;
+height: 100%;	
+font-family: 'DINNextLTProBoldCondensed';
+background-color: #0091d3;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+
+#wrapper {
+	z-index: -2;
+	width: 1100px;
+	min-height: 750px;
+	height: auto;
+	margin-left: auto; margin-right: auto;
+
+}
+#wrapper-gallery {
+	z-index: -2;
+	width: 1100px;
+	min-height: 750px;
+	height: auto;
+	margin-left: auto; margin-right: auto;
+
+}

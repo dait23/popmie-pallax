@@ -1,0 +1,59 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+
+html {
+	
+}
+body{ color: #fff;}
+@import url('module/font.css');
+small {font-style:italic; }
+
+ #tweets { position: absolute;
+    width:140px;
+    margin:0px 0px 0px 0px;  
+    margin-top: 170px;
+    margin-left: 7px;
+   font-size: 10px;
+    padding:10px; position: absolute;
+    color: #fff;
+       font-family: 'DINNextLTProRegular';
+    
+}
+
+#tweets li p{
+    font-family: 'DINNextLTProRegular';
+    margin-top: -180px;
+    padding: 10px;
+    width: 140px;
+    height: auto;
+     margin-bottom: 0px;
+    font-size: 10px;
+     line-height: 15px;
+     margin-left: -10px;
+     text-align: center;
+    color:#fff;
+    
+}
+#tweet_loader{font-size: 10px; color: #fff; margin-top: 0px;margin-left: 10px;}
+#gw{ color:#ed3423;}
+#tweets li .timestamp {text-align:right; color: #ed3423;}
+
+#tweets li.tweet_content_0 {
+    border-top:0px none; font-size: 11px;
+}
+#tweets li:last-child{
+    border-bottom:0px none; font-size: 11px; 
+}
+
+#tweets .hash { color:#0089d0; } 
+#tweets .reply { color:#0089d0; } 
+
+#tweets a:link { text-decoration:underline; color:#fff;font-size: 11px; text-decoration: none;}
+#tweets a:active { text-decoration:underline; color:#fff;font-size: 11px;text-decoration: none;}
+#tweets a:hover { text-decoration:underline; color:#fff;font-size: 11px;text-decoration: none;}
+#tweets a:visited { text-decoration:underline; color:#fff;font-size: 11px;text-decoration: none;}

@@ -1,0 +1,327 @@
+@import url('grid.css');
+@import url('caption.css');
+
+/* gallery PAGE
+*****************************************************************/
+#gallery-head{ width: auto; height: auto;margin-left: 223px;}
+#line{ width: 100%; height: 28px; border-bottom: 1px solid #fff; margin-top: -32px; margin-left: auto;margin-right: auto;}
+
+#box-filter{ width: 100px; height: 28px; float: left;}
+#box-filter p{font-family: 'DINNextLTProBoldCondensed'; font-size: 13px; color: #fff; text-transform: uppercase;text-align: left; margin-top: 5px;}
+#box-year{ width: 60px; height: 20px; float: left; margin-right: 20px; color: #fff !important; background-image: url(../../img/drop.png); }
+#box-title{ width: 60px; height: 20px; float: left; background-image: url(../../img/drop.png); margin-left: 30px;}
+#box-item{ width: 100px; height: 28px; float: right;}
+#box-item p{font-family: 'DINNextLTProBoldCondensed'; font-size: 13px; color: #fff; text-transform: uppercase;text-align: left; margin-top: 5px;}
+
+
+
+/* gallery content
+*****************************************************************/
+
+#content{ width: 100%; min-height: 700px;  margin-top: 20px;}
+
+
+
+
+/* gallery content
+*****************************************************************/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+.masonry {
+
+  
+}
+
+.masonry .item {
+  width:  auto;
+  height:auto;
+  float: left;
+  margin: 9px;
+}
+
+
+.item.w2 { width:  auto; }
+.item.w3 { width:  auto; }
+.item.w4 { width:  auto; }
+
+.item.h2 { height: auto; }
+.item.h3 { height: auto; }
+.item.h4 { height: auto; }
+
+
+.group{
+	display: inline-block;
+}
+
+.button,
+.drop_down{
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding: 0 0px;
+	background: #fff;
+	vertical-align: middle;
+	margin-right: 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: 'DINNextLTProBoldCondensed'; font-size: 13px; color: #fff; 
+}
+
+.drop_down{
+	width: auto;
+	margin: 5px 0 0 0px;
+	background: none;
+	font-family: 'DINNextLTProBoldCondensed'; font-size: 13px; color: #fff; 
+	padding: 0;
+	position: relative;
+	z-index: 999;
+}
+
+.drop_down span{
+	position: relative;
+	padding-right: 20px;
+}
+
+.drop_down span::after,
+.drop_down span::before{
+	position: absolute;
+	top: 8px;
+	right: 3px;
+	display: block;
+	content: '';
+
+	
+}
+
+.drop_down span::before{
+	top: 6px;
+	z-index: 10;
+}
+
+.drop_down:hover span::after{
+	border-top-color: #333;
+}
+
+.drop_down ul{
+	position: absolute;
+	opacity: 0;
+	max-height: 0;
+	right: -3px;
+	padding: 15px;
+	min-width: 120px;
+	text-align: right;
+	overflow: hidden;
+	color: #fff;
+}
+
+.drop_down:hover ul{
+	opacity: 1;
+	max-height: 300px;
+}
+
+.drop_down:hover span{
+	color: #fff;
+}
+
+.drop_down li{
+	display: block;
+	text-transform: none;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0;
+	margin-bottom: 10px;
+	
+	-webkit-transition: all 150ms;
+	-moz-transition: all 150ms;
+	-ms-transition: all 150ms;
+	transition: all 150ms;
+}
+
+.drop_down li:after{
+	content: '';
+	position: relative;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	top: 1px;
+	margin-left: 6px;
+	border: 1px solid #ccc;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.drop_down li:last-of-type{
+	margin: 0;
+}
+
+.drop_down li:hover{
+	color: #fff;
+}
+
+.drop_down li.active{
+	color: #ed1c24;
+	font-weight: 400;
+}
+
+.drop_down li.active:after{
+	background: #fff;
+	border-color: #fff;
+}
+
+.button.active{
+	background: #fff;
+}
+
+.button i{
+	position: relative;
+	display: inline-block;
+	background: #f9f6f0;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	top: 3px;
+}
+
+.button i:before,
+.button i:after{
+	content: '';
+	position: absolute;
+	display: block;
+	background: #c3bdb8;
+}
+/*=============================================*\
+ Some styles to show off masonry layout
+\*=============================================*/
+.picture-item {
+  height: auto;
+  margin-bottom: 25px;
+}
+.picture-item.shuffle-item {
+  margin-left: 0;
+  background-color: #e4e4e4;
+  color:#000;
+  text-transform: uppercase;
+  font-size: 15px;
+  /* shuffle items shouldn't have a left margin*/
+}
+.picture-item.picture-item--h2 {
+  height: auto;
+  /* 2x the height + 1 gutter */
+}
+.picture-item.span6:not(.picture-item--h2) .picture-item__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.picture-item.span6:not(.picture-item--h2) .picture-item__description {
+  display: none;
+}
+.picture-item .picture-item__inner {
+  background: #ecf0f1;
+  height: 100%;
+  overflow: hidden;
+}
+.picture-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.picture-item .picture-item__details,
+.picture-item .picture-item__description {
+  padding: 1em;
+}
+.picture-item .picture-item__description {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 2em;
+}
+.picture-item .picture-item__tags {
+  margin: 0;
+}
+
+/*
+  Shuffle needs either relative or absolute positioning on the container
+  It will set it for you, but it'll cause another style recalculation and layout.
+  AKA worse performance - so just set it here
+ */
+.shuffle--container {
+  position: relative;
+  overflow: hidden;
+}
+
+.shuffle--fluid .shuffle__sizer {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animate in styles */
+.shuffle--animatein {
+  overflow: visible;
+}
+
+.shuffle--animatein .picture-item__inner {
+  opacity: 0;
+  -webkit-transform: translate(0, 220px);
+  -moz-transform: translate(0, 220px);
+  -ms-transform: translate(0, 220px);
+  -o-transform: translate(0, 220px);
+  transform: translate(0, 220px);
+}
+
+.shuffle--animatein .picture-item__inner--transition {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.shuffle--animatein .picture-item.in .picture-item__inner {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+@media (max-width: 47.9375em) {
+  .picture-item {
+    height: auto;
+    margin-top: 20px;
+  }
+  .picture-item.picture-item--h2 {
+    height: auto;
+  }
+  .picture-item .picture-item__details,
+  .picture-item .picture-item__description {
+    font-size: .875em;
+    padding: .625em;
+  }
+  .picture-item .picture-item__description {
+    padding-right: .875em;
+    padding-bottom: 1.25em;
+  }
+
+  .filter > .row-fluid,
+  .filter > .row-fluid > div {
+    margin: 10px 0;
+  }
+
+  .m-nofloat {
+    float: none;
+  }
+}
+/* popup
+----------------------------------------------------------------------------------------------*/
+.content-pop{ width: 895px; height: 487px; background-color: #000; margin-left: auto;margin-right: auto; margin-top: 10%;}
